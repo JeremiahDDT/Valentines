@@ -20,3 +20,8 @@ function createHeart() {
 }
 
 setInterval(createHeart, 300);
+
+function valentineAnswer() {
+  document.getElementById("valentine-response").style.display = "block";
+}
+

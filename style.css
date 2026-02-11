@@ -86,3 +86,30 @@ button:hover {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+.valentine-question {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.valentine-question button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.valentine-question button:hover {
+  background: #d62828;
+}
+
+#valentine-response {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #e63946;
+}
