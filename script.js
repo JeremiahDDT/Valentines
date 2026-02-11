@@ -7,8 +7,9 @@ function showLove() {
 // Show the response for Yes / No
 function valentineAnswer(answer) {
   const response = document.getElementById("valentine-response");
+  response.style.display = "block";
   if (answer === "yes") {
-    response.textContent = "Yay! I'm so happy ❤️ Can't wait to spend today with you!";
+    response.textContent = "Yay! I knew you would say yes! I love you so much! Happy Valentine's Day!";
   } else if (answer === "no") {
     response.textContent = "Yeah, Nice Try theres no way you can say no to me. I know you love me too";
   }
