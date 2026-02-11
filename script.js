@@ -5,9 +5,15 @@ function showLove() {
 }
 
 // Show the response for Yes / No
-function valentineAnswer() {
-  document.getElementById("valentine-response").style.display = "block";
+function valentineAnswer(answer) {
+  const response = document.getElementById("valentine-response");
+  if (answer === "yes") {
+    response.textContent = "Yay! I'm so happy ❤️ Can't wait to spend today with you!";
+  } else if (answer === "no") {
+    response.textContent = "Yeah, Nice Try theres no way you can say no to me. I know you love me too";
+  }
 }
+
 
 // Floating hearts
 function createHeart() {
