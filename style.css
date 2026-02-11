@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .card {
@@ -35,15 +36,12 @@ button:hover {
   background: #d62828;
 }
 
-.hidden {
-  display: none;
-}
-
 #surprise {
   margin-top: 20px;
   font-size: 18px;
   color: #e63946;
 }
+
 #hearts-container {
   position: fixed;
   top: 0;
@@ -113,12 +111,16 @@ button:hover {
   font-size: 18px;
   color: #e63946;
 }
+
+/* HIDDEN container — no animation on page load */
 #surprise-container {
-  display: none; /* default hidden */
-  animation: fadeIn 1s forwards;
+  display: none;
+  opacity: 0; /* start transparent */
+  transition: opacity 1s ease-in-out; /* fade in on reveal */
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+/* When JS triggers, we add a class "show" */
+#surprise-container.show {
+  display: block;
+  opacity: 1;
 }

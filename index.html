@@ -8,37 +8,37 @@
 <body>
 
   <!-- Floating hearts -->
-  <div id="hearts-container"></div>
-
   <div class="card">
-    <h1>Happy Valentine’s Day 💖</h1>
+  <h1>Happy Valentine's Day 💖</h1>
 
-    <div class="photos">
-      <img src="images/photo1.jpg" alt="Us">
-      <img src="images/photo2.jpg" alt="Us">
-    </div>
-
-    <!-- Surprise button -->
-    <button onclick="showLove()">Click for a surprise 💌</button>
-
-    <!-- Surprise container: hidden by default -->
-    <div id="surprise-container" class="hidden">
-      <p id="surprise">
-        I love you more than words can say ❤️
-      </p>
-
-      <!-- Valentine question -->
-      <div class="valentine-question">
-        <h2>Will you be my Valentine? 💌</h2>
-        <button onclick="valentineAnswer()">Yes</button>
-        <button onclick="valentineAnswer()">No</button>
-        <p id="valentine-response" class="hidden">
-          Yay! I’m so happy ❤️ Can’t wait to spend today with you!
-        </p>
-      </div>
-    </div>
-
+  <div class="photos">
+    <img src="images/image1.jpg" alt="Us">
+    <img src="images/image2.jpg" alt="Us">
   </div>
+
+  <!-- Surprise button -->
+  <button onclick="showLove()">Click for a surprise 💌</button>
+
+  <!-- HIDDEN container for both surprise message and Valentine question -->
+  <div id="surprise-container" style="display:none;">
+    <!-- Surprise message -->
+    <p id="surprise">
+      I love you more than words can say ❤️
+    </p>
+
+    <!-- Valentine question -->
+    <div class="valentine-question">
+      <h2>Will you be my Valentine? 💌</h2>
+      <button onclick="valentineAnswer()">Yes</button>
+      <button onclick="valentineAnswer()">No</button>
+      <p id="valentine-response" style="display:none;">
+        Yay! I'm so happy ❤️ Can't wait to spend today with you!
+      </p>
+    </div>
+  </div>
+
+</div>
+
 
   <script src="script.js"></script>
 </body>

@@ -1,9 +1,10 @@
-// Surprise button shows the container with the message + question
+// Show the surprise + Valentine question
 function showLove() {
-  document.getElementById("surprise-container").style.display = "block";
+  const container = document.getElementById("surprise-container");
+  container.classList.add("show"); // adds the fade-in and display block
 }
 
-// Valentine answer button (Yes / No) shows response
+// Show the response for Yes / No
 function valentineAnswer() {
   document.getElementById("valentine-response").style.display = "block";
 }
@@ -20,11 +21,8 @@ function createHeart() {
 
   document.getElementById("hearts-container").appendChild(heart);
 
-  setTimeout(() => {
-    heart.remove();
-  }, 6000);
+  setTimeout(() => heart.remove(), 6000);
 }
 
+// Create hearts continuously
 setInterval(createHeart, 300);
-
-
