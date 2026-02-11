@@ -1,5 +1,11 @@
+// Surprise button shows the container with the message + question
 function showLove() {
-  document.getElementById("surprise").style.display = "block";
+  document.getElementById("surprise-container").style.display = "block";
+}
+
+// Valentine answer button (Yes / No) shows response
+function valentineAnswer() {
+  document.getElementById("valentine-response").style.display = "block";
 }
 
 // Floating hearts
@@ -21,7 +27,4 @@ function createHeart() {
 
 setInterval(createHeart, 300);
 
-function valentineAnswer() {
-  document.getElementById("valentine-response").style.display = "block";
-}
 
