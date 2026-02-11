@@ -1,7 +1,7 @@
 // Show the surprise + Valentine question
 function showLove() {
   const container = document.getElementById("surprise-container");
-  container.classList.add("show"); // adds the fade-in and display block
+  container.classList.add("show");
 }
 
 // Show the response for Yes / No
@@ -24,5 +24,5 @@ function createHeart() {
   setTimeout(() => heart.remove(), 6000);
 }
 
-// Create hearts continuously
+// Generate hearts continuously
 setInterval(createHeart, 300);

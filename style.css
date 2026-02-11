@@ -36,12 +36,6 @@ button:hover {
   background: #d62828;
 }
 
-#surprise {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #e63946;
-}
-
 #hearts-container {
   position: fixed;
   top: 0;
@@ -85,8 +79,26 @@ button:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+#surprise-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out;
+  margin-top: 20px;
+}
+
+#surprise-container.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#surprise {
+  font-size: 18px;
+  color: #e63946;
+  margin-bottom: 15px;
+}
+
 .valentine-question {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -107,20 +119,8 @@ button:hover {
 }
 
 #valentine-response {
+  display: none;
   margin-top: 15px;
   font-size: 18px;
   color: #e63946;
-}
-
-/* HIDDEN container — no animation on page load */
-#surprise-container {
-  display: none;
-  opacity: 0; /* start transparent */
-  transition: opacity 1s ease-in-out; /* fade in on reveal */
-}
-
-/* When JS triggers, we add a class "show" */
-#surprise-container.show {
-  display: block;
-  opacity: 1;
 }
